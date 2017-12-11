@@ -5,16 +5,24 @@ import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {TopBarComponent} from './top-bar/top-bar.component';
+import {NavBarComponent} from './nav-bar/nav-bar.component';
+import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopBarComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
-    HttpModule
+    RouterModule,
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
